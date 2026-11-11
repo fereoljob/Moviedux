@@ -1,6 +1,7 @@
 import { Container, Box } from "@mui/material";
 import Searchbar from "../components/Searchbar";
 import MovieGrid from "../components/MovieGrid";
+import Filter from "../components/Filter";
 import { useEffect, useState } from "react";
 export default function Accueil() {
   const [movies, setMovies] = useState([]);
@@ -22,6 +23,7 @@ export default function Accueil() {
         </Box>
 
         <Searchbar movies={movies} />
+        <Filter />
         <MovieGrid movies={movies} />
       </Container>
     </>

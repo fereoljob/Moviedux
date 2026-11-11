@@ -5,8 +5,12 @@ export default function Header() {
   return (
     <Box
       sx={{
+        position: "sticky",
+        top: 0,
+        zIndex: 1100,
         backgroundColor: "#272727",
       }}
+      component="header"
     >
       <Navbar />
     </Box>
